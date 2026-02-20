@@ -791,8 +791,8 @@
 
             const contentItems = [
                 { id: 'youtab', name: 'Стриминг', desc: 'Стриминг платформа', baseSubsPrice: 100, baseCashPrice: 0, subsPerSec: 0, cashPerSec: 0.01, clickBonus: 1, multiplierTarget: null, count: 0, maxLevel: Infinity },
-                { id: 'tegigram', name: 'Посты', desc: 'Весёлые нарезки', baseSubsPrice: 500, baseCashPrice: 0.25, subsPerSec: 0.5, cashPerSec: 0.05, clickBonus: 0, multiplierTarget: null, count: 0, maxLevel: Infinity },
-                { id: 'kiktotk', name: 'Ролики', desc: 'Короткие ролики', baseSubsPrice: 1000, baseCashPrice: 2, subsPerSec: 5, cashPerSec: 0.1, clickBonus: 0, multiplierTarget: null, count: 0, maxLevel: Infinity },
+                { id: 'tegigram', name: 'Посты', desc: 'Весёлые нарезки', baseSubsPrice: 500, baseCashPrice: 0.25, subsPerSec: 0.5, cashPerSec: 0.02, clickBonus: 0, multiplierTarget: null, count: 0, maxLevel: Infinity },
+                { id: 'kiktotk', name: 'Ролики', desc: 'Короткие ролики', baseSubsPrice: 1000, baseCashPrice: 2, subsPerSec: 5, cashPerSec: 0.05, clickBonus: 0, multiplierTarget: null, count: 0, maxLevel: Infinity },
                 { id: 'cosplay', name: 'Косплей', desc: 'Усиливает YouTab', baseSubsPrice: 2000, baseCashPrice: 10, subsPerSec: 0, cashPerSec: 0, clickBonus: 10, multiplierTarget: 'youtab', multiplierValue: 0.25, count: 0, maxLevel: Infinity },
                 { id: 'spofifi', name: 'Треки', desc: 'Музыка', baseSubsPrice: 5000, baseCashPrice: 50, subsPerSec: 0, cashPerSec: 1, clickBonus: 0, multiplierTarget: null, count: 0, maxLevel: Infinity }
             ];
@@ -808,7 +808,7 @@
 
             let currentSkin = skins[0];
             const SAVE_KEY = 'glestream_save';
-            let saveTimestamp = 0; // для сравнения версий
+            let saveTimestamp = 0; 
 
             // ============ ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ ============
             
