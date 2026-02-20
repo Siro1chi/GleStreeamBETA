@@ -723,7 +723,7 @@
 
         <!-- ЕЖЕДНЕВНАЯ НАГРАДА (АЛМАЗЫ) -->
         <div class="daily-reward" id="dailyRewardBlock">
-            <span>🎁 Ежедневный бонус: 5💎 + 50👥 + 10$</span>
+            <span>🎁 Ежедневный бонус: 5💎</span>
             <button id="dailyRewardBtn">Забрать</button>
         </div>
 
@@ -778,7 +778,7 @@
             let clickBonus = 0;
             let clickPower = 1;        
             let globalBonus = 1.0;     
-            let lastDailyTime = 0;      // время последнего получения ежедневной награды
+            let lastDailyTime = 0;      
 
             // ============ КОНФИГ ============
             const contentUnlocks = [
@@ -993,8 +993,6 @@
                         contentUnlocks[prestigeLevel].unlocked = true;
                     }
                     
-                    // Награда за престиж убрана (раньше были гемы)
-                    
                     recalcPassiveIncome();
                     recalcClickPower();
                     renderGame();
@@ -1076,13 +1074,9 @@
             function claimDaily() {
                 if (!canClaimDaily()) return false;
                 
-                // Награда: 5 алмазов, 50 подписчиков, 10 долларов
+                // Награда: 5 алмазов
                 gems += 5;
-                subscribers += 50;
-                cash += 10;
-                
                 lastDailyTime = Date.now();
-                
                 renderGame();
                 updateDailyButton();
                 saveGame();
